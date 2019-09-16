@@ -19,13 +19,15 @@ public class Ship {
     @OneToMany(mappedBy="ship")
     private List<Pirate> pirates;
 
-    public Ship() {
 
-    }
 
     public Ship(String name) {
         this.name = name;
         this.pirates = new ArrayList<Pirate>();
+    }
+
+    public Ship() {
+
     }
 
     public Long getId() {
